@@ -1,0 +1,53 @@
+.headerContainer {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f4f5f9;
+    z-index: 3;
+}
+
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-left: 20px;
+    padding: 20px 0px;
+    padding-right: 20px;
+}
+
+.header>div {
+    display: flex;
+}
+
+.header>div>button {
+    margin-left: 10px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: black;
+    cursor: pointer;
+    border: none;
+    /* background-color: #fff; */
+    background-color: #f4f5f9;
+}
+
+.header>div>p {
+    margin-right: 10px;
+    padding: 8px 0px;
+}
+
+.activeListItem {
+    border-radius: 20px !important;
+    background-color: #e1e4ea !important;
+    color: #636363 !important;
+}
+
+.header>input[type="text"] {
+    width: 20%;
+    padding: 0px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

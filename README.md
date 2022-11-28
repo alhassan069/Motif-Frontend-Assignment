@@ -1,84 +1,70 @@
-# Frontend Engineer Assignment
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Problem Statement
-Build an email client app like Outlook.
-Following APIs are provided:
-1. Get all emails
-2. Get email body for a particular email
+## Available Scripts
 
+In the project directory, you can run:
 
-## Sample UI
-1. Email List View (http://bit.ly/2VtQGcb)
-2. Email body View (http://bit.ly/2I5DemI)
-3. Color codes (http://bit.ly/2wa2pCa)
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Product Features
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-1. The app features an email list page. This page shows the list of emails sent to a user.
-2. Clicking on any email item in the list should split the screen into a master-slave
-(left-right) screen type where the master (left) shows the email list (with the selected
-email item) while the slave (right) shows the body of the email. The body of the email is
-not known ahead of time and should be loaded only when the email item is clicked.
-3. The app should allow any particular email item to be marked as “favorite”, it should be
-done via clicking on an email item and then clicking the “Mark as Favorite” button in the
-email body section.
-4. The app should show read and unread mails in different CSS styles to distinguish
-between the same.
-5. Upon opening an email that email should be considered as read.
-6. Allow filtering emails by “favorites”, “read” and “unread”.
-7. Persist favorited and read emails across sessions using persistent storage technologies.
-8. Provide the ability to perform bulk actions using checkbox on email list to mark them as read, unread , and delete.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Must Haves:
-1. Render all emails page using the API
-2, Each email should have from, subject, short description, date and time.
-3. The avatar (circular logo) in each email item should be populated with the first
-character of first name (sent in API response).
-4. Upon clicking a particular email, render the body section for it using the API. Email body
-has 3 sections:
-  *  Email subject
-  *  Email body
-  *  Email date and time
-5. Allow email to be marked favorite in the body section of the email
-6. Filter emails marked as favorite, read and unread
-7. UI should be as close to the mocks provided
-8. The date should be rendered in format dd/MM/yyyy hh:mm .
-9. Your code should be deployed and available through any of the tools like Heroku, Netlify etc.
+### `npm run build`
 
-## Good to Have:
-1. Email list could be long and hence is paginated. There are 2 pages i.e. page 1 and page
-2 which can be accessed via the APIs provided below.
-2. Provide search functionality on frontend using the email contents.
-3. Exception handling within components and API interactions.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Points to consider:
-1. Focus on the modularity of code and design of the solution. Keep performance of the
-application in mind.
-2. The solution should be coded using React , vanilla JavaScript, HTML and CSS.You can use tooling such as webpack, grunt, gulp, etc.
-3. The final solution should work without errors.
-4. Do not completely ignore the layout / visual design. A minimalist visual design / layout
-must be followed, it is also important for us to evaluate your CSS knowledge.
-5. Do not create a div soup instead use semantic HTML tags
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-## You will be evaluated based on:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. Correctness and completeness of the solution.
-2. Code design and quality.
-3. Visual aesthetics (the UI should be as close as possible to the given design).
-4. Your understanding of the problem statement.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-##  API Sources 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Email List API's: 
-GET https://6366339879b0914b75cba9c2.mockapi.io/api/email
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2. Email Body API:
-https://6366339879b0914b75cba9c2.mockapi.io/api/email/<email-item-id>
-e.g. GET https://6366339879b0914b75cba9c2.mockapi.io/api/email/3
+## Learn More
 
-## To complete your assignment, please fork this repo and commit your work to your fork. When you are ready for us to look at it, give us access to your fork so we can review and run it. Only commits before the due date would be considered.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

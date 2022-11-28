@@ -1,0 +1,89 @@
+.detailBox {
+    width: 710px;
+    /* margin: auto; */
+    margin-left: 90px;
+    position: fixed;
+    max-height: 70vh;
+    background-color: white;
+    border: 1px solid #cfd2dc;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.detailBox>header {
+    display: flex;
+    background-color: white;
+}
+
+.detailBox>.leftCol>.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #e54065;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.detailBox>.rightCol {
+    display: flex;
+    padding-right: 20px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.detailBox>.rightCol>h1 {
+    display: flex;
+    font-size: 24px;
+    color: #636363;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    background-color: white;
+}
+
+.detailBox>.rightCol>h1>.favBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #e54065;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.leftCol {
+    background-color: white;
+}
+
+.rightCol>span {
+    background-color: white;
+}
+
+.detailBox>.rightCol>h4 {
+    display: flex;
+    font-weight: normal;
+    font-size: 14px;
+    color: #636363;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    background-color: white;
+}
+
+.htmlElement>div {
+    background-color: white !important;
+}
+
+.htmlElement>div>* {
+    display: block !important;
+    background-color: white !important;
+}

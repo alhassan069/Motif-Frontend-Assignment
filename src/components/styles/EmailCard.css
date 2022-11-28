@@ -1,0 +1,86 @@
+.card {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: calc(0.0625 * 1rem) solid #cfd2dc;
+    border-radius: calc(0.0625 * 10rem);
+    margin-bottom: calc(0.0625 * 20rem);
+    padding: calc(0.0625 * 16rem);
+    display: flex;
+    cursor: pointer;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+#activeCard {
+    border: calc(0.0625 * 2rem) solid #e54065;
+}
+
+.card>.leftCol {
+    margin-right: calc(0.0625 * 10rem);
+    background-color: #fff;
+}
+
+.card>.leftCol>.avatar {
+    height: calc(0.0625 * 40rem);
+    width: calc(0.0625 * 40rem);
+    border-radius: 50%;
+    background-color: #e54065;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.card>.rightCol {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.card>.rightCol>h4 {
+    font-size: 12px;
+    height: 14px;
+    font-weight: normal;
+    margin-top: calc(0.0125 * 0.1rem);
+    margin-bottom: calc(0.0625 * 11rem);
+    /* line-height: calc(0.06 * 15rem); */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #fff;
+}
+
+.card>.rightCol>h4>span {
+    background-color: #fff;
+}
+
+.card>.rightCol>h4:nth-child(4) {
+    margin-top: calc(0.0625 * 0.1rem);
+    margin-bottom: calc(0.0625 * 1rem);
+}
+
+.card>.rightCol>h4>span {
+    font-weight: bold;
+}
+
+.fav {
+    font-size: 13px;
+    color: #e54065 !important;
+    margin-left: calc(0.0625 * 20rem);
+}
+
+#readCard {
+    background-color: #f2f2f2;
+}
+
+#readCard>* {
+    background-color: #f2f2f2;
+}
+
+#readCard>*>h4 {
+    background-color: #f2f2f2;
+}
+
+#readCard>*>h4>span {
+    background-color: #f2f2f2;
+}
