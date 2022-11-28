@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import EmailList from "./components/EmailList";
 import Header from "./components/Header";
@@ -34,7 +33,7 @@ function App() {
 
   const handleClickCard = (isActive, data) => {
     const newData = Emails.map((item, i) => {
-      if (item.id == data.id) {
+      if (item.id === data.id) {
         return { ...item, ["isRead"]: true };
       } else return item;
     });
@@ -50,7 +49,7 @@ function App() {
   };
   const markFavorite = (emailDetail) => {
     const newData = Emails.map((item, i) => {
-      if (item.id == emailDetail.id) {
+      if (item.id === emailDetail.id) {
         return { ...item, ["isFav"]: !item.isFav };
       } else return item;
     });
@@ -60,21 +59,16 @@ function App() {
   const handleFilter = (c) => {
     setIsActive(false);
     setCurrentPage(c);
-    if (c == "UNREAD") {
+    if (c === "UNREAD") {
       let unreadMails = Emails.filter((mail) => !mail.isRead);
-      console.log("unreadMails", unreadMails);
       setShowMails(unreadMails);
-    } else if (c == "READ") {
+    } else if (c === "READ") {
       let readMails = Emails.filter((mail) => mail.isRead);
-      console.log("reead", readMails);
       setShowMails(readMails);
-    } else if (c == "FAVORITES") {
+    } else if (c === "FAVORITES") {
       let favoriteMails = Emails.filter((mail) => mail.isFav);
-      console.log("fav", favoriteMails);
       setShowMails(favoriteMails);
     }
-    console.log("showMails", showMails);
-    console.log("showMails", Emails);
   };
 
   return (

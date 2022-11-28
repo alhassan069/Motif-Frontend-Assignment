@@ -7,18 +7,6 @@ const fetchHandler = async (id) => {
   return await axios.get(URL + id).then((res) => res.data);
 };
 
-const mData = {
-  subject: "Suscipit sed sit modi autem et quam doloremque sit.",
-  short_description: "Dolorem quo omnis voluptate delectus sit quam eum vero.",
-  from_email: "Joshuah.Schaden22@gmail.com",
-  from_name: "Dennis",
-  id: "1",
-
-  body: "<div><p>amet magna lobortis aliquet a ac est.</p></div>",
-  isFav: false,
-  isDeleted: false,
-  isRead: false,
-};
 let dte = new Date();
 let dformat =
   [dte.getMonth() + 1, dte.getDate(), dte.getFullYear()].join("/") +
@@ -34,7 +22,6 @@ const EmailDetails = ({ data, markFavorite }) => {
       }));
     });
   }, []);
-  console.log("inside the email Details", emailDetail);
   return (
     <div className="detailBox">
       <section className="leftCol">
@@ -46,14 +33,21 @@ const EmailDetails = ({ data, markFavorite }) => {
           {emailDetail.isFav ? (
             <button
               className="favBtn"
-              onClick={() => markFavorite(emailDetail)}
+              onClick={() => {
+                setEmailDetails(emailDetail=>({...emailDetail, ["isFav"]: !emailDetail.isFav }));
+                 markFavorite(emailDetail)
+                }
+              }
             >
               Delete favorite
             </button>
           ) : (
             <button
               className="favBtn"
-              onClick={() => markFavorite(emailDetail)}
+              onClick={() =>{
+                setEmailDetails(emailDetail=>({...emailDetail, ["isFav"]: !emailDetail.isFav }));
+               markFavorite(emailDetail)
+              }}
             >
               Mark as favorite
             </button>

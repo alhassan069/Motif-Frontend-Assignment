@@ -7,19 +7,19 @@ const Header = ({ handleFilter, currentPage }) => {
         <p>Filter By:</p>
         <div>
           <button
-            className={currentPage == "UNREAD" ? "activeListItem" : ""}
+            className={currentPage === "UNREAD" ? "activeListItem" : ""}
             onClick={() => handleFilter("UNREAD")}
           >
             Unread
           </button>
           <button
-            className={currentPage == "READ" ? "activeListItem" : ""}
+            className={currentPage === "READ" ? "activeListItem" : ""}
             onClick={() => handleFilter("READ")}
           >
             Read
           </button>
           <button
-            className={currentPage == "FAVORITES" ? "activeListItem" : ""}
+            className={currentPage === "FAVORITES" ? "activeListItem" : ""}
             onClick={() => handleFilter("FAVORITES")}
           >
             Favorites
