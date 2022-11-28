@@ -47,10 +47,6 @@ function App() {
     } else {
       setIsActive(false);
     }
-
-    // else if (!!isActive && data.id != currentActive.id) {
-    //   setCurrentActive(data);
-    // }
   };
   const markFavorite = (emailDetail) => {
     const newData = Emails.map((item, i) => {

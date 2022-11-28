@@ -10,8 +10,8 @@ let dformat =
 const EmailCard = ({ email, handleClick, isActive, currentActive }) => {
   return (
     <div
-      className="card"
-      id={email.isRead ? "readCard" : ""}
+      className={email.isRead ? "card readCard" : "card"}
+      id={email.id == currentActive.id ? "activeCard" : ""}
       onClick={() => handleClick(isActive, email)}
     >
       <section className="leftCol">

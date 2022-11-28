@@ -69,18 +69,18 @@
     margin-left: calc(0.0625 * 20rem);
 }
 
-#readCard {
-    background-color: #f2f2f2;
+.readCard {
+    background-color: #f2f2f2 !important;
 }
 
-#readCard>* {
-    background-color: #f2f2f2;
+.readCard>* {
+    background-color: #f2f2f2 !important;
 }
 
-#readCard>*>h4 {
-    background-color: #f2f2f2;
+.readCard>*>h4 {
+    background-color: #f2f2f2 !important;
 }
 
-#readCard>*>h4>span {
-    background-color: #f2f2f2;
+.readCard>*>h4>span {
+    background-color: #f2f2f2 !important;
 }
